@@ -13,7 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface JSDChefStatusView : UIView
 
-- (void)updateFromChef:(JSDPizzaChef* )chef index:(NSInteger)index; 
+- (void)updateFromChef:(JSDPizzaChef* )chef index:(NSInteger)index;
+@property(nonatomic, copy) void(^switchCallback)(NSInteger chefIndex, BOOL status);
 
 @end
 

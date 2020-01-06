@@ -77,7 +77,16 @@
     NSString *filePath = [resourcePath stringByAppendingPathComponent:[NSString stringWithFormat:@"chef_%ld.jpg",index]];
     self.photoImageView.image = [UIImage imageWithContentsOfFile: filePath];
     
+    //暂时 Tag 表示 chef
+    self.workSwitch.tag = index;
+    
 }
+
+- (IBAction)onTouchStatusSwitch:(UISwitch *)sender {
+    
+    self.switchCallback ? self.switchCallback(sender.tag, sender.isOn) : NULL;
+}
+
 
 
 @end

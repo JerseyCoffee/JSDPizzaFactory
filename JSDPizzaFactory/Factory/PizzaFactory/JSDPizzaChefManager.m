@@ -86,6 +86,11 @@
 
 - (void)switchChefStatus:(int)chefNumber {
     
+//    [self.chefs[chefNumber] switchStatus];
+}
+
+- (void)switchChefStatus:(NSInteger)chefNumber switchStatus:(BOOL)switchStatus {
+    
     [self.chefs[chefNumber] switchStatus];
 }
 

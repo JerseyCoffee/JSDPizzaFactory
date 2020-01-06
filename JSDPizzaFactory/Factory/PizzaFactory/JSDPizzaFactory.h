@@ -16,7 +16,7 @@ typedef void(^voidBlock)(void);
 
 - (void)customMakePizzeCount:(NSInteger)pizzeCount completionBlock:(voidBlock _Nullable )complectionBlock;
 - (void)switchWorkStatus;
-- (void)switchChefStatus:(int)chefNumber;
+- (void)switchChefStatus:(NSInteger)chefNumber switchStatus:(BOOL)switchStatus;
 
 @optional
 
@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)addMakePizzaCount:(NSInteger)pizzaCount completionBlock:(voidBlock)complectionBlock;
 - (void)willSwitchWorkStatus;
-- (void)willSwitchChefStatus:(int)chefNumber;
+- (void)willSwitchChefStatus:(NSInteger)chefNumber switchStatus:(BOOL)switchStatus;
 
 @end
 

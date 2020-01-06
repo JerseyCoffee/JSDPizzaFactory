@@ -780,6 +780,7 @@
 				DEVELOPMENT_TEAM = 2K6DTDY865;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JSDPizzaFactory/Tool/JSDPrefixHeader.pch";
 				INFOPLIST_FILE = JSDPizzaFactory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -799,6 +800,7 @@
 				DEVELOPMENT_TEAM = 2K6DTDY865;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JSDPizzaFactory/Tool/JSDPrefixHeader.pch";
 				INFOPLIST_FILE = JSDPizzaFactory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

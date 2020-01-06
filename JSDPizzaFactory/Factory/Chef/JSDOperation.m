@@ -14,16 +14,4 @@
 
 @implementation JSDOperation
 
-- (void)main {
-    
-    [self.pizzaChef makePizzaOperation];
-}
-
-- (BOOL)isFinished {
-    
-    NSLog(@"完成?");
-    
-    return YES;
-}
-
 @end

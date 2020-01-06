@@ -130,5 +130,11 @@
     }
 }
 
+- (IBAction)onTouchGlobalSwitch:(UISwitch *)sender {
+    
+    
+}
+
+
 
 @end

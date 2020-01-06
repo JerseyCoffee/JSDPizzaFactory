@@ -7,13 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JSDPizzaChef.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JSDOperation : NSOperation
-
-@property(nonatomic, strong) JSDPizzaChef *pizzaChef;
 
 @end
 

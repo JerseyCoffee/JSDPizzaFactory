@@ -24,10 +24,10 @@
     }
 }
 
-- (void)willSwitchChefStatus:(int)chefNumber {
+- (void)willSwitchChefStatus:(NSInteger)chefNumber switchStatus:(BOOL)switchStatus {
     
-    if (self.delegate && [self.delegate respondsToSelector:@selector(switchChefStatus:)]) {
-        [self.delegate switchChefStatus:chefNumber];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(switchChefStatus:switchStatus:)]) {
+        [self.delegate switchChefStatus:chefNumber switchStatus:switchStatus];
     }
 }
 

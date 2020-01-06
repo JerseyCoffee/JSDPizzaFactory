@@ -12,10 +12,12 @@
 @interface JSDPizzaChef ()
 
 @property(nonatomic, strong) NSOperationQueue *operationQueue;
-@property(nonatomic, weak)   JSDOperation *operation;
+@property(nonatomic, weak)   NSBlockOperation *operation;
 @property(nonatomic, assign) NSInteger completionPizzaCount;
 @property(nonatomic, assign) NSInteger waitMakePizzaCount;
 @property(nonatomic, assign) NSInteger pizzaSumCount;
+@property(nonatomic, assign) JSDPizzaChefWorkStatus workStatus;
+
 
 @end
 
@@ -27,19 +29,11 @@
     if (!self) {
         return nil;
     }
-    
     _operationQueue = [[NSOperationQueue alloc] init];
     _operationQueue.maxConcurrentOperationCount = 1;
     
     return self;
 }
-
-//- (void)addPizzaCount:(NSInteger)pizzaCount {
-//
-//    self.pizzaSumCount += pizzaCount;
-//    self.waitMakePizzaCount += pizzaCount;
-//    [self start];
-//}
 
 - (void)addPizzas:(NSArray *)pizzas {
     
@@ -48,8 +42,10 @@
             [self.pizzaSum addObject:obj];
             [self.waitMakePizzas addObject:obj];
         }];
+        [self makePizza];
     }];
-    [self.operationQueue addOperation:addPizzaOperation];
+    NSOperationQueue* queue = [[NSOperationQueue alloc] init];
+    [queue addOperation:addPizzaOperation];
 }
 
 - (void)movePizzaNumber:(NSInteger)pizzaNumber fromPizzaChef:(JSDPizzaChef *)pizzaChef {
@@ -59,21 +55,25 @@
 
 - (void)start {
     
+}
+
+- (void)pause {
     
 }
 
 - (void)makePizza {
     
-    JSDOperation* makePizzaOperation = [[JSDOperation alloc] init];
+    NSBlockOperation* makePizzaOperation = [NSBlockOperation blockOperationWithBlock:^{
+        [self makePizzaOperation];
+    }];
     self.operation = makePizzaOperation;
-    self.operation.pizzaChef = self;
     [self.operationQueue addOperation:makePizzaOperation];
-    [self.operation main];
 }
 
 - (void)makePizzaOperation {
     
     if (self.waitMakePizzas.count) {
+        self.workStatus = JSDPizzaTypeBeef;
         NSLog(@"%@ 开始制作披萨 %@", self.name, self.waitMakePizzas.firstObject.nameNumber);
         self.waitMakePizzas.firstObject.status = JSDCookiesMakeStatusBeing;
         sleep(self.spped);
@@ -84,20 +84,20 @@
         [self.operation isFinished];
         [self makePizza];
     } else {
-//        self.operation = nil;
-//        [self.operation isFinished];
-//        self.operation = nil;
+        self.operation = nil;
+        self.workStatus = JSDPizzaChefWorkStatusRest;
     }
-}
-
-
-- (void)pause {
-    
-    
 }
 
 - (void)switchStatus {
     
+    static BOOL work = NO;
+    if (!work) {
+        [self pause];
+    } else {
+        [self start];
+    }
+    work = !work;
 }
 
 - (NSMutableArray<JSDPizza *> *)pizzaSum {

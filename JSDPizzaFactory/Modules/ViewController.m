@@ -53,6 +53,35 @@ static NSString* const kPizzaCellIdentifier = @"PizzaCellIdentifier";
     [self setupPrivateMethod];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    
+    [super viewDidAppear:animated];
+    
+    // 交互绑定
+    @weakify(self)
+    self.factoryManagerView.addPizzaCallback = ^{
+        @strongify(self)
+        [self.pizzaFactory addMakePizzaCount:10 completionBlock:^{
+            @strongify(self)
+            [self reloadingView];
+        }];
+        
+    };
+    self.factoryManagerView.addMorePizzaCallback = ^{
+        @strongify(self)
+        [self.pizzaFactory addMakePizzaCount:100 completionBlock:^{
+            @strongify(self)
+            [self reloadingView];
+        }];
+    };
+    
+    [self.chefStatusViews enumerateObjectsUsingBlock:^(JSDChefStatusView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        obj.switchCallback = ^(NSInteger chefIndex, BOOL status) {
+            [self.pizzaFactory willSwitchChefStatus:chefIndex switchStatus:status];
+        };
+    }];
+}
+
 #pragma mark - 2 SettingView and Style
 
 -(void)setupNavBar {
@@ -113,24 +142,6 @@ static NSString* const kPizzaCellIdentifier = @"PizzaCellIdentifier";
         obj.rowHeight = 30;
         [self.pizzaStackView addArrangedSubview:obj];
     }];
-    
-    // 交互绑定
-    @weakify(self)
-    self.factoryManagerView.addPizzaCallback = ^{
-        @strongify(self)
-        [self.pizzaFactory addMakePizzaCount:10 completionBlock:^{
-            @strongify(self)
-            [self reloadingView];
-        }];
-        
-    };
-    self.factoryManagerView.addMorePizzaCallback = ^{
-        @strongify(self)
-        [self.pizzaFactory addMakePizzaCount:100 completionBlock:^{
-            @strongify(self)
-            [self reloadingView];
-        }];
-    };
 }
 
 - (void)reloadingView {
@@ -159,7 +170,7 @@ static NSString* const kPizzaCellIdentifier = @"PizzaCellIdentifier";
 - (void)setupData {
     
     @weakify(self)
-    [self.pizzaFactory addMakePizzaCount:1000 completionBlock:^{
+    [self.pizzaFactory addMakePizzaCount:20 completionBlock:^{
         @strongify(self)
         [self reloadingView];
     }];
