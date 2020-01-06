@@ -1,0 +1,6 @@
+framework module Pods_JSDPizzaFactory_JSDPizzaFactoryUITests {
+  umbrella header "Pods-JSDPizzaFactory-JSDPizzaFactoryUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

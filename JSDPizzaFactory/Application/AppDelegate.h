@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AppDelegate.h
 //  JSDPizzaFactory
 //
 //  Created by Jersey on 6/1/2020.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+@property(nonatomic, strong) UIWindow *window;
 
 @end
 

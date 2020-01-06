@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		642320C5210724E54F4E9DDB /* Pods_JSDPizzaFactoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4752C4C43C5C58628C8C4ABA /* Pods_JSDPizzaFactoryTests.framework */; };
+		72C396787144D31AD3AEE668 /* Pods_JSDPizzaFactory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1221984E3C6B97EE4D3B4ED9 /* Pods_JSDPizzaFactory.framework */; };
+		8109E451BE9BB16A25E1AFD1 /* Pods_JSDPizzaFactory_JSDPizzaFactoryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A4424CAE53A007E0BF7363 /* Pods_JSDPizzaFactory_JSDPizzaFactoryUITests.framework */; };
 		B4A0680823C3707C00E0BBBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A0680723C3707C00E0BBBB /* AppDelegate.m */; };
 		B4A0680B23C3707C00E0BBBB /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A0680A23C3707C00E0BBBB /* SceneDelegate.m */; };
 		B4A0680E23C3707C00E0BBBB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A0680D23C3707C00E0BBBB /* ViewController.m */; };
@@ -16,6 +19,28 @@
 		B4A0681923C3707D00E0BBBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A0681823C3707D00E0BBBB /* main.m */; };
 		B4A0682323C3707E00E0BBBB /* JSDPizzaFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A0682223C3707E00E0BBBB /* JSDPizzaFactoryTests.m */; };
 		B4A0682E23C3707E00E0BBBB /* JSDPizzaFactoryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A0682D23C3707E00E0BBBB /* JSDPizzaFactoryUITests.m */; };
+		B4A0684C23C3742B00E0BBBB /* UIColor+JSDStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A0684123C3742B00E0BBBB /* UIColor+JSDStyle.m */; };
+		B4A0684D23C3742B00E0BBBB /* UIFont+JSDStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A0684323C3742B00E0BBBB /* UIFont+JSDStyle.m */; };
+		B4A0684E23C3742B00E0BBBB /* chef_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4A0684523C3742B00E0BBBB /* chef_4.jpg */; };
+		B4A0684F23C3742B00E0BBBB /* chef_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4A0684623C3742B00E0BBBB /* chef_5.jpg */; };
+		B4A0685023C3742B00E0BBBB /* chef_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4A0684723C3742B00E0BBBB /* chef_6.jpg */; };
+		B4A0685123C3742B00E0BBBB /* chef_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4A0684823C3742B00E0BBBB /* chef_2.jpg */; };
+		B4A0685223C3742B00E0BBBB /* chef_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4A0684923C3742B00E0BBBB /* chef_3.jpg */; };
+		B4A0685323C3742B00E0BBBB /* chef_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4A0684A23C3742B00E0BBBB /* chef_1.jpg */; };
+		B4A0685423C3742B00E0BBBB /* chef_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4A0684B23C3742B00E0BBBB /* chef_0.jpg */; };
+		B4A0686A23C377BA00E0BBBB /* JSDPizzaFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A0685C23C377BA00E0BBBB /* JSDPizzaFactory.m */; };
+		B4A0686B23C377BA00E0BBBB /* JSDPizzaChefManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A0685D23C377BA00E0BBBB /* JSDPizzaChefManager.m */; };
+		B4A0686C23C377BA00E0BBBB /* JSDChef.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A0685F23C377BA00E0BBBB /* JSDChef.m */; };
+		B4A0686D23C377BA00E0BBBB /* JSDOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A0686023C377BA00E0BBBB /* JSDOperation.m */; };
+		B4A0686E23C377BA00E0BBBB /* JSDPizzaChef.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A0686123C377BA00E0BBBB /* JSDPizzaChef.m */; };
+		B4A0686F23C377BA00E0BBBB /* JSDCookies.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A0686623C377BA00E0BBBB /* JSDCookies.m */; };
+		B4A0687023C377BA00E0BBBB /* JSDPizza.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A0686923C377BA00E0BBBB /* JSDPizza.m */; };
+		B4A0687B23C3795C00E0BBBB /* JSDFactoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A0687223C3795C00E0BBBB /* JSDFactoryView.m */; };
+		B4A0687C23C3795C00E0BBBB /* JSDFactoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4A0687323C3795C00E0BBBB /* JSDFactoryView.xib */; };
+		B4A0687D23C3795C00E0BBBB /* JSDPizzaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A0687423C3795C00E0BBBB /* JSDPizzaCell.m */; };
+		B4A0687E23C3795C00E0BBBB /* JSDChefStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A0687523C3795C00E0BBBB /* JSDChefStatusView.m */; };
+		B4A0687F23C3795C00E0BBBB /* JSDChefStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4A0687623C3795C00E0BBBB /* JSDChefStatusView.xib */; };
+		B4A0688023C3795C00E0BBBB /* JSDPizzaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4A0687923C3795C00E0BBBB /* JSDPizzaCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +61,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1221984E3C6B97EE4D3B4ED9 /* Pods_JSDPizzaFactory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSDPizzaFactory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4752C4C43C5C58628C8C4ABA /* Pods_JSDPizzaFactoryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSDPizzaFactoryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		722D2A38163BC3DB88AA1927 /* Pods-JSDPizzaFactoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSDPizzaFactoryTests.release.xcconfig"; path = "Target Support Files/Pods-JSDPizzaFactoryTests/Pods-JSDPizzaFactoryTests.release.xcconfig"; sourceTree = "<group>"; };
+		7EC5B73E2BC7E1B511376C39 /* Pods-JSDPizzaFactory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSDPizzaFactory.debug.xcconfig"; path = "Target Support Files/Pods-JSDPizzaFactory/Pods-JSDPizzaFactory.debug.xcconfig"; sourceTree = "<group>"; };
+		9A528580E8DA45BCD848B7DB /* Pods-JSDPizzaFactory-JSDPizzaFactoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSDPizzaFactory-JSDPizzaFactoryUITests.debug.xcconfig"; path = "Target Support Files/Pods-JSDPizzaFactory-JSDPizzaFactoryUITests/Pods-JSDPizzaFactory-JSDPizzaFactoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B4A0680323C3707C00E0BBBB /* JSDPizzaFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSDPizzaFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A0680623C3707C00E0BBBB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B4A0680723C3707C00E0BBBB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +84,46 @@
 		B4A0682923C3707E00E0BBBB /* JSDPizzaFactoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSDPizzaFactoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A0682D23C3707E00E0BBBB /* JSDPizzaFactoryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSDPizzaFactoryUITests.m; sourceTree = "<group>"; };
 		B4A0682F23C3707E00E0BBBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4A0683F23C3742B00E0BBBB /* UIColor+JSDStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JSDStyle.h"; sourceTree = "<group>"; };
+		B4A0684023C3742B00E0BBBB /* UIFont+JSDStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+JSDStyle.h"; sourceTree = "<group>"; };
+		B4A0684123C3742B00E0BBBB /* UIColor+JSDStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JSDStyle.m"; sourceTree = "<group>"; };
+		B4A0684223C3742B00E0BBBB /* JSDMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDMacro.h; sourceTree = "<group>"; };
+		B4A0684323C3742B00E0BBBB /* UIFont+JSDStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+JSDStyle.m"; sourceTree = "<group>"; };
+		B4A0684523C3742B00E0BBBB /* chef_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chef_4.jpg; sourceTree = "<group>"; };
+		B4A0684623C3742B00E0BBBB /* chef_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chef_5.jpg; sourceTree = "<group>"; };
+		B4A0684723C3742B00E0BBBB /* chef_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chef_6.jpg; sourceTree = "<group>"; };
+		B4A0684823C3742B00E0BBBB /* chef_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chef_2.jpg; sourceTree = "<group>"; };
+		B4A0684923C3742B00E0BBBB /* chef_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chef_3.jpg; sourceTree = "<group>"; };
+		B4A0684A23C3742B00E0BBBB /* chef_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chef_1.jpg; sourceTree = "<group>"; };
+		B4A0684B23C3742B00E0BBBB /* chef_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chef_0.jpg; sourceTree = "<group>"; };
+		B4A0685723C3768B00E0BBBB /* JSDPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSDPrefixHeader.pch; sourceTree = "<group>"; };
+		B4A0685A23C377BA00E0BBBB /* JSDPizzaFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDPizzaFactory.h; sourceTree = "<group>"; };
+		B4A0685B23C377BA00E0BBBB /* JSDPizzaChefManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDPizzaChefManager.h; sourceTree = "<group>"; };
+		B4A0685C23C377BA00E0BBBB /* JSDPizzaFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDPizzaFactory.m; sourceTree = "<group>"; };
+		B4A0685D23C377BA00E0BBBB /* JSDPizzaChefManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDPizzaChefManager.m; sourceTree = "<group>"; };
+		B4A0685F23C377BA00E0BBBB /* JSDChef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDChef.m; sourceTree = "<group>"; };
+		B4A0686023C377BA00E0BBBB /* JSDOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDOperation.m; sourceTree = "<group>"; };
+		B4A0686123C377BA00E0BBBB /* JSDPizzaChef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDPizzaChef.m; sourceTree = "<group>"; };
+		B4A0686223C377BA00E0BBBB /* JSDChef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDChef.h; sourceTree = "<group>"; };
+		B4A0686323C377BA00E0BBBB /* JSDOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDOperation.h; sourceTree = "<group>"; };
+		B4A0686423C377BA00E0BBBB /* JSDPizzaChef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDPizzaChef.h; sourceTree = "<group>"; };
+		B4A0686623C377BA00E0BBBB /* JSDCookies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDCookies.m; sourceTree = "<group>"; };
+		B4A0686723C377BA00E0BBBB /* JSDPizza.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDPizza.h; sourceTree = "<group>"; };
+		B4A0686823C377BA00E0BBBB /* JSDCookies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDCookies.h; sourceTree = "<group>"; };
+		B4A0686923C377BA00E0BBBB /* JSDPizza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDPizza.m; sourceTree = "<group>"; };
+		B4A0687223C3795C00E0BBBB /* JSDFactoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDFactoryView.m; sourceTree = "<group>"; };
+		B4A0687323C3795C00E0BBBB /* JSDFactoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSDFactoryView.xib; sourceTree = "<group>"; };
+		B4A0687423C3795C00E0BBBB /* JSDPizzaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDPizzaCell.m; sourceTree = "<group>"; };
+		B4A0687523C3795C00E0BBBB /* JSDChefStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDChefStatusView.m; sourceTree = "<group>"; };
+		B4A0687623C3795C00E0BBBB /* JSDChefStatusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSDChefStatusView.xib; sourceTree = "<group>"; };
+		B4A0687723C3795C00E0BBBB /* JSDFactoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDFactoryView.h; sourceTree = "<group>"; };
+		B4A0687823C3795C00E0BBBB /* JSDPizzaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDPizzaCell.h; sourceTree = "<group>"; };
+		B4A0687923C3795C00E0BBBB /* JSDPizzaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSDPizzaCell.xib; sourceTree = "<group>"; };
+		B4A0687A23C3795C00E0BBBB /* JSDChefStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDChefStatusView.h; sourceTree = "<group>"; };
+		B75E2C6B546731C45D6685FB /* Pods-JSDPizzaFactory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSDPizzaFactory.release.xcconfig"; path = "Target Support Files/Pods-JSDPizzaFactory/Pods-JSDPizzaFactory.release.xcconfig"; sourceTree = "<group>"; };
+		BEB87EB8232CF864C68CC591 /* Pods-JSDPizzaFactoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSDPizzaFactoryTests.debug.xcconfig"; path = "Target Support Files/Pods-JSDPizzaFactoryTests/Pods-JSDPizzaFactoryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4A4424CAE53A007E0BF7363 /* Pods_JSDPizzaFactory_JSDPizzaFactoryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSDPizzaFactory_JSDPizzaFactoryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB3DC2E3439DF99B8218DA18 /* Pods-JSDPizzaFactory-JSDPizzaFactoryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSDPizzaFactory-JSDPizzaFactoryUITests.release.xcconfig"; path = "Target Support Files/Pods-JSDPizzaFactory-JSDPizzaFactoryUITests/Pods-JSDPizzaFactory-JSDPizzaFactoryUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72C396787144D31AD3AEE668 /* Pods_JSDPizzaFactory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				642320C5210724E54F4E9DDB /* Pods_JSDPizzaFactoryTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +147,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8109E451BE9BB16A25E1AFD1 /* Pods_JSDPizzaFactory_JSDPizzaFactoryUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D54BBFABA4B31195FFBF534 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1221984E3C6B97EE4D3B4ED9 /* Pods_JSDPizzaFactory.framework */,
+				F4A4424CAE53A007E0BF7363 /* Pods_JSDPizzaFactory_JSDPizzaFactoryUITests.framework */,
+				4752C4C43C5C58628C8C4ABA /* Pods_JSDPizzaFactoryTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B4A067FA23C3707C00E0BBBB = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +171,8 @@
 				B4A0682123C3707E00E0BBBB /* JSDPizzaFactoryTests */,
 				B4A0682C23C3707E00E0BBBB /* JSDPizzaFactoryUITests */,
 				B4A0680423C3707C00E0BBBB /* Products */,
+				E435E0A9EE1A1AFE89D167AE /* Pods */,
+				6D54BBFABA4B31195FFBF534 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,17 +189,12 @@
 		B4A0680523C3707C00E0BBBB /* JSDPizzaFactory */ = {
 			isa = PBXGroup;
 			children = (
-				B4A0680623C3707C00E0BBBB /* AppDelegate.h */,
-				B4A0680723C3707C00E0BBBB /* AppDelegate.m */,
-				B4A0680923C3707C00E0BBBB /* SceneDelegate.h */,
-				B4A0680A23C3707C00E0BBBB /* SceneDelegate.m */,
-				B4A0680C23C3707C00E0BBBB /* ViewController.h */,
-				B4A0680D23C3707C00E0BBBB /* ViewController.m */,
-				B4A0680F23C3707C00E0BBBB /* Main.storyboard */,
-				B4A0681223C3707D00E0BBBB /* Assets.xcassets */,
-				B4A0681423C3707D00E0BBBB /* LaunchScreen.storyboard */,
 				B4A0681723C3707D00E0BBBB /* Info.plist */,
-				B4A0681823C3707D00E0BBBB /* main.m */,
+				B4A0685523C3743700E0BBBB /* Application */,
+				B4A0684423C3742B00E0BBBB /* Resource */,
+				B4A0685823C377BA00E0BBBB /* Factory */,
+				B4A0683E23C3742B00E0BBBB /* Tool */,
+				B4A0685623C374D800E0BBBB /* Modules */,
 			);
 			path = JSDPizzaFactory;
 			sourceTree = "<group>";
@@ -137,6 +217,132 @@
 			path = JSDPizzaFactoryUITests;
 			sourceTree = "<group>";
 		};
+		B4A0683E23C3742B00E0BBBB /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				B4A0684223C3742B00E0BBBB /* JSDMacro.h */,
+				B4A0685723C3768B00E0BBBB /* JSDPrefixHeader.pch */,
+				B4A0683F23C3742B00E0BBBB /* UIColor+JSDStyle.h */,
+				B4A0684123C3742B00E0BBBB /* UIColor+JSDStyle.m */,
+				B4A0684023C3742B00E0BBBB /* UIFont+JSDStyle.h */,
+				B4A0684323C3742B00E0BBBB /* UIFont+JSDStyle.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		B4A0684423C3742B00E0BBBB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B4A0681223C3707D00E0BBBB /* Assets.xcassets */,
+				B4A0684523C3742B00E0BBBB /* chef_4.jpg */,
+				B4A0684623C3742B00E0BBBB /* chef_5.jpg */,
+				B4A0684723C3742B00E0BBBB /* chef_6.jpg */,
+				B4A0684823C3742B00E0BBBB /* chef_2.jpg */,
+				B4A0684923C3742B00E0BBBB /* chef_3.jpg */,
+				B4A0684A23C3742B00E0BBBB /* chef_1.jpg */,
+				B4A0684B23C3742B00E0BBBB /* chef_0.jpg */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		B4A0685523C3743700E0BBBB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B4A0681823C3707D00E0BBBB /* main.m */,
+				B4A0680623C3707C00E0BBBB /* AppDelegate.h */,
+				B4A0680723C3707C00E0BBBB /* AppDelegate.m */,
+				B4A0680923C3707C00E0BBBB /* SceneDelegate.h */,
+				B4A0680A23C3707C00E0BBBB /* SceneDelegate.m */,
+				B4A0680F23C3707C00E0BBBB /* Main.storyboard */,
+				B4A0681423C3707D00E0BBBB /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B4A0685623C374D800E0BBBB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B4A0680C23C3707C00E0BBBB /* ViewController.h */,
+				B4A0680D23C3707C00E0BBBB /* ViewController.m */,
+				B4A0687123C3795C00E0BBBB /* View */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B4A0685823C377BA00E0BBBB /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				B4A0685923C377BA00E0BBBB /* PizzaFactory */,
+				B4A0685E23C377BA00E0BBBB /* Chef */,
+				B4A0686523C377BA00E0BBBB /* Pizza */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		B4A0685923C377BA00E0BBBB /* PizzaFactory */ = {
+			isa = PBXGroup;
+			children = (
+				B4A0685B23C377BA00E0BBBB /* JSDPizzaChefManager.h */,
+				B4A0685D23C377BA00E0BBBB /* JSDPizzaChefManager.m */,
+				B4A0685A23C377BA00E0BBBB /* JSDPizzaFactory.h */,
+				B4A0685C23C377BA00E0BBBB /* JSDPizzaFactory.m */,
+			);
+			path = PizzaFactory;
+			sourceTree = "<group>";
+		};
+		B4A0685E23C377BA00E0BBBB /* Chef */ = {
+			isa = PBXGroup;
+			children = (
+				B4A0686223C377BA00E0BBBB /* JSDChef.h */,
+				B4A0685F23C377BA00E0BBBB /* JSDChef.m */,
+				B4A0686323C377BA00E0BBBB /* JSDOperation.h */,
+				B4A0686023C377BA00E0BBBB /* JSDOperation.m */,
+				B4A0686423C377BA00E0BBBB /* JSDPizzaChef.h */,
+				B4A0686123C377BA00E0BBBB /* JSDPizzaChef.m */,
+			);
+			path = Chef;
+			sourceTree = "<group>";
+		};
+		B4A0686523C377BA00E0BBBB /* Pizza */ = {
+			isa = PBXGroup;
+			children = (
+				B4A0686823C377BA00E0BBBB /* JSDCookies.h */,
+				B4A0686623C377BA00E0BBBB /* JSDCookies.m */,
+				B4A0686723C377BA00E0BBBB /* JSDPizza.h */,
+				B4A0686923C377BA00E0BBBB /* JSDPizza.m */,
+			);
+			path = Pizza;
+			sourceTree = "<group>";
+		};
+		B4A0687123C3795C00E0BBBB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4A0687A23C3795C00E0BBBB /* JSDChefStatusView.h */,
+				B4A0687523C3795C00E0BBBB /* JSDChefStatusView.m */,
+				B4A0687623C3795C00E0BBBB /* JSDChefStatusView.xib */,
+				B4A0687723C3795C00E0BBBB /* JSDFactoryView.h */,
+				B4A0687223C3795C00E0BBBB /* JSDFactoryView.m */,
+				B4A0687323C3795C00E0BBBB /* JSDFactoryView.xib */,
+				B4A0687823C3795C00E0BBBB /* JSDPizzaCell.h */,
+				B4A0687423C3795C00E0BBBB /* JSDPizzaCell.m */,
+				B4A0687923C3795C00E0BBBB /* JSDPizzaCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E435E0A9EE1A1AFE89D167AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EC5B73E2BC7E1B511376C39 /* Pods-JSDPizzaFactory.debug.xcconfig */,
+				B75E2C6B546731C45D6685FB /* Pods-JSDPizzaFactory.release.xcconfig */,
+				9A528580E8DA45BCD848B7DB /* Pods-JSDPizzaFactory-JSDPizzaFactoryUITests.debug.xcconfig */,
+				FB3DC2E3439DF99B8218DA18 /* Pods-JSDPizzaFactory-JSDPizzaFactoryUITests.release.xcconfig */,
+				BEB87EB8232CF864C68CC591 /* Pods-JSDPizzaFactoryTests.debug.xcconfig */,
+				722D2A38163BC3DB88AA1927 /* Pods-JSDPizzaFactoryTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +350,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4A0683223C3707E00E0BBBB /* Build configuration list for PBXNativeTarget "JSDPizzaFactory" */;
 			buildPhases = (
+				A7FCDF16524303DB23174473 /* [CP] Check Pods Manifest.lock */,
 				B4A067FF23C3707C00E0BBBB /* Sources */,
 				B4A0680023C3707C00E0BBBB /* Frameworks */,
 				B4A0680123C3707C00E0BBBB /* Resources */,
+				7C37FF6BDAB2E5B124398118 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +369,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4A0683523C3707E00E0BBBB /* Build configuration list for PBXNativeTarget "JSDPizzaFactoryTests" */;
 			buildPhases = (
+				FE9DAF19F513CEC9703F4CD6 /* [CP] Check Pods Manifest.lock */,
 				B4A0681A23C3707E00E0BBBB /* Sources */,
 				B4A0681B23C3707E00E0BBBB /* Frameworks */,
 				B4A0681C23C3707E00E0BBBB /* Resources */,
@@ -179,9 +388,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4A0683823C3707E00E0BBBB /* Build configuration list for PBXNativeTarget "JSDPizzaFactoryUITests" */;
 			buildPhases = (
+				0C67C47B30A9A0FA3791A321 /* [CP] Check Pods Manifest.lock */,
 				B4A0682523C3707E00E0BBBB /* Sources */,
 				B4A0682623C3707E00E0BBBB /* Frameworks */,
 				B4A0682723C3707E00E0BBBB /* Resources */,
+				DE99F8218F6812F7E3B74D81 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -240,9 +451,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A0687F23C3795C00E0BBBB /* JSDChefStatusView.xib in Resources */,
+				B4A0685423C3742B00E0BBBB /* chef_0.jpg in Resources */,
+				B4A0685023C3742B00E0BBBB /* chef_6.jpg in Resources */,
+				B4A0688023C3795C00E0BBBB /* JSDPizzaCell.xib in Resources */,
+				B4A0685223C3742B00E0BBBB /* chef_3.jpg in Resources */,
+				B4A0687C23C3795C00E0BBBB /* JSDFactoryView.xib in Resources */,
+				B4A0684F23C3742B00E0BBBB /* chef_5.jpg in Resources */,
 				B4A0681623C3707D00E0BBBB /* LaunchScreen.storyboard in Resources */,
 				B4A0681323C3707D00E0BBBB /* Assets.xcassets in Resources */,
+				B4A0685123C3742B00E0BBBB /* chef_2.jpg in Resources */,
+				B4A0684E23C3742B00E0BBBB /* chef_4.jpg in Resources */,
 				B4A0681123C3707C00E0BBBB /* Main.storyboard in Resources */,
+				B4A0685323C3742B00E0BBBB /* chef_1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,15 +483,130 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C67C47B30A9A0FA3791A321 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JSDPizzaFactory-JSDPizzaFactoryUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C37FF6BDAB2E5B124398118 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JSDPizzaFactory/Pods-JSDPizzaFactory-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JSDPizzaFactory/Pods-JSDPizzaFactory-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JSDPizzaFactory/Pods-JSDPizzaFactory-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7FCDF16524303DB23174473 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JSDPizzaFactory-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE99F8218F6812F7E3B74D81 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JSDPizzaFactory-JSDPizzaFactoryUITests/Pods-JSDPizzaFactory-JSDPizzaFactoryUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JSDPizzaFactory-JSDPizzaFactoryUITests/Pods-JSDPizzaFactory-JSDPizzaFactoryUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JSDPizzaFactory-JSDPizzaFactoryUITests/Pods-JSDPizzaFactory-JSDPizzaFactoryUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE9DAF19F513CEC9703F4CD6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JSDPizzaFactoryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B4A067FF23C3707C00E0BBBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A0686B23C377BA00E0BBBB /* JSDPizzaChefManager.m in Sources */,
+				B4A0687D23C3795C00E0BBBB /* JSDPizzaCell.m in Sources */,
+				B4A0684C23C3742B00E0BBBB /* UIColor+JSDStyle.m in Sources */,
+				B4A0686C23C377BA00E0BBBB /* JSDChef.m in Sources */,
+				B4A0687E23C3795C00E0BBBB /* JSDChefStatusView.m in Sources */,
 				B4A0680E23C3707C00E0BBBB /* ViewController.m in Sources */,
+				B4A0687023C377BA00E0BBBB /* JSDPizza.m in Sources */,
+				B4A0687B23C3795C00E0BBBB /* JSDFactoryView.m in Sources */,
+				B4A0686E23C377BA00E0BBBB /* JSDPizzaChef.m in Sources */,
+				B4A0684D23C3742B00E0BBBB /* UIFont+JSDStyle.m in Sources */,
+				B4A0686A23C377BA00E0BBBB /* JSDPizzaFactory.m in Sources */,
 				B4A0680823C3707C00E0BBBB /* AppDelegate.m in Sources */,
 				B4A0681923C3707D00E0BBBB /* main.m in Sources */,
+				B4A0686F23C377BA00E0BBBB /* JSDCookies.m in Sources */,
 				B4A0680B23C3707C00E0BBBB /* SceneDelegate.m in Sources */,
+				B4A0686D23C377BA00E0BBBB /* JSDOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,10 +773,12 @@
 		};
 		B4A0683323C3707E00E0BBBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EC5B73E2BC7E1B511376C39 /* Pods-JSDPizzaFactory.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2K6DTDY865;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JSDPizzaFactory/Tool/JSDPrefixHeader.pch";
 				INFOPLIST_FILE = JSDPizzaFactory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,10 +792,12 @@
 		};
 		B4A0683423C3707E00E0BBBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B75E2C6B546731C45D6685FB /* Pods-JSDPizzaFactory.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2K6DTDY865;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JSDPizzaFactory/Tool/JSDPrefixHeader.pch";
 				INFOPLIST_FILE = JSDPizzaFactory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -471,6 +811,7 @@
 		};
 		B4A0683623C3707E00E0BBBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEB87EB8232CF864C68CC591 /* Pods-JSDPizzaFactoryTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -491,6 +832,7 @@
 		};
 		B4A0683723C3707E00E0BBBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 722D2A38163BC3DB88AA1927 /* Pods-JSDPizzaFactoryTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -511,6 +853,7 @@
 		};
 		B4A0683923C3707E00E0BBBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A528580E8DA45BCD848B7DB /* Pods-JSDPizzaFactory-JSDPizzaFactoryUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2K6DTDY865;
@@ -529,6 +872,7 @@
 		};
 		B4A0683A23C3707E00E0BBBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB3DC2E3439DF99B8218DA18 /* Pods-JSDPizzaFactory-JSDPizzaFactoryUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2K6DTDY865;

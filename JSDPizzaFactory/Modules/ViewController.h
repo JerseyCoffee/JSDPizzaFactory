@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  ViewController.h
 //  JSDPizzaFactory
 //
 //  Created by Jersey on 6/1/2020.
@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+extern NSInteger const kChefCount;
+@interface ViewController : UIViewController
 
 
 @end

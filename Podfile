@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'JSDPizzaFactory' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for JSDPizzaFactory
+  pod 'Masonry'
+  inhibit_all_warnings!  #禁止掉三方库警告
+
+  target 'JSDPizzaFactoryTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'JSDPizzaFactoryUITests' do
+    # Pods for testing
+  end
+
+end
