@@ -170,7 +170,7 @@ static NSString* const kPizzaCellIdentifier = @"PizzaCellIdentifier";
 - (void)setupData {
     
     @weakify(self)
-    [self.pizzaFactory addMakePizzaCount:20 completionBlock:^{
+    [self.pizzaFactory addMakePizzaCount:1000 completionBlock:^{
         @strongify(self)
         [self reloadingView];
     }];
